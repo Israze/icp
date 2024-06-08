@@ -7,3 +7,9 @@ tasks:
       dfx canister create --all
       dfx build
       dfx deploy
+
+ports:
+  - port: 8000
+    onOpen: open-preview
+  - port: 8080
+    onOpen: open-preview
