@@ -1,0 +1,9 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: dfx start --background
+    command: |
+      dfx canister create --all
+      dfx build
+      dfx deploy
